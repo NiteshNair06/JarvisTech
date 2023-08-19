@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jarvis</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script>
+        function performSearch() {
+            var searchTerm = document.getElementById("searchInput").value;
+            var pageContent = document.body.innerHTML;
+            var highlightedContent = pageContent.replace(new RegExp(searchTerm, 'gi'), '<span class="highlighted">$&</span>');
+            document.body.innerHTML = highlightedContent;
+        }
+        function clearSearch() {
+            document.getElementById("searchInput").value = "";
+            document.body.innerHTML = originalContent; 
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <header id="i3">
+        <!-- <h1 align="center">JarvisTech</h1> -->
+        <header>
+            <nav class="navbar">
+                <ul style="padding-top: 50px;">
+                    <li style="padding-left: 35px;"><a href="#s1">About Us</a></li>
+                    <li><a href="#s2">Service</a></li>
+                    <li><a href="#s3">Investors</a></li>
+                    <li><a href="#s4">Contact us</a></li>
+
+                    <div class="search1">
+                        <!--extra-->
+                        <form onsubmit="performSearch(); return false;">
+
+                            <input type="text" name="search" id="searchInput" class="search2" placeholder="Search">
+
+                            <!-- this is extra--> <button type="submit" class="search-button"><span
+                                    class="search-icon">&#128269;</span></button>
+                            <button type="button" onclick="clearSearch()">Clear</button>
+
+                        </form>
+
+                    </div>
+                </ul>
+
+            </nav>
+        </header>
+    </header>
+    <section id="s1">
+        <div class="n2">
+
+            <h1 id="h1"> About Us </h1>
+
+            <br>
+
+            <ul id="n1">
+
+                <li> Welcome to the digital realm of innovation and excellence – where technology meets imagination.
+                    We
+                    are
+                    thrilled to present to you, <b>JarvisTech</b> – your gateway to cutting-edge IT solutions and
+                    limitless
+                    possibilities.</li>
+                <br>
+                <li>At <b>JarvisTech</b>, we're not just an IT company; we're your partners in progress, your
+                    architects
+                    of
+                    advancement, and your wizards of the web. Our journey is defined by a passion for pushing
+                    boundaries, a
+                    commitment to client success, and a relentless pursuit of perfection.</li>
+                <br>
+
+
+                <li>Imagine a world where intricate codes create captivating designs, where data transforms into
+                    decisions,
+                    and where your vision transforms into virtual reality. Our dedicated team of tech enthusiasts,
+                    coding
+                    maestros, and design virtuosos work in harmony to craft digital experiences that resonate with your
+                    ambitions.</li>
+                <br>
+
+                <li>Whether you're a startup seeking the perfect platform to launch your dreams, an established business
+                    looking to amplify your digital presence, or an individual ready to embrace the
+                    future,<b>JarvisTech</b>
+                    has a solution tailored just for you.</li>
+                <br>
+                <li>With a fusion of creativity and technical expertise, we're the alchemists of innovation, turning
+                    concepts into captivating user interfaces, and lines of code into seamless functionality. We're more
+                    than a company – we're your silent collaborators, your reliable advisors, and your steadfast
+                    supporters
+                    on the journey to digital transformation.</li>
+                <br>
+                <li>So, take a step into the realm of <b>JarvisTech</b>, where ideas flourish, codes create, and
+                    possibilities are as boundless as your imagination. Let's co-create the future, one pixel, one
+                    algorithm, and one success story at a time. Welcome to tomorrow. Welcome to <b>JarvisTech</b> .</li>
+
+
+
+            </ul>
+        </div>
+
+
+        <table>
+            <tr>
+                <th id="h4">
+                    <h2 id="h2"> Belief Powers Business</h2>
+                    <p id="h3">
+                        At JarvisTech, we go beyond helping businesses transform through technology. We help them make a
+                        meaningful difference; to their customers, and to the communities they serve.
+                    </p>
+
+                </th>
+                <th>
+                    <img id="i1"
+                        src="https://s7ap1.scene7.com/is/image/TCSCOMprod/What-we-do-1?wid=1000&hei=563&dpr=off" alt="">
+                </th>
+
+            </tr>
+        </table>
+    </section>
+    <section id="s2">
+
+
+
+        <div id="m1">
+            <h1 id="h7">Service</h1>
+            <div class="container">
+
+                <div class="item" id="item1">Cloud</div>
+                <div class="item" id="item2">Cognitive Business Operations</div>
+                <div class="item" id="item3">Consulting</div>
+                <div class="item" id="item4">CyberSecurity</div>
+
+
+                <div class="item" id="item5">Data & Analytics</div>
+                <div class="item" id="item6">Network Solutions & Service</div>
+                <div class="item" id="item7">Sustainability Services</div>
+                <div class="item" id="item8">Enterprise SolutionS</div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <div class="cont1">
+        <video autoplay loop muted plays-inline src="video1.mp4" class="back-vid"></video>
+
+        <button class="btn"><a href="index.html" id="h9">
+                Breaking News!!
+                <br>
+                Click here to view the Article
+
+            </a>
+        </button>
+    </div>
+
+    <header id="head">
+        <h1 id="s3">JarvisTech - Investors</h1>
+
+    </header>
+
+    <div id="cont2">
+        <h2 id="h11">Our Investors</h2>
+        <div class="investor-card">
+            <!-- <img class="investor-logo" src="investor1_logo.png" alt="Investor 1"> -->
+            <div class="investor-details">
+                <h3>Quantum Ventures</h3>
+                <p>Quantum Ventures is a leading venture capital firm known for identifying and nurturing transformative
+                    technology companies. With a keen eye for disruptive startups, they have provided significant
+                    funding to Jarvistech, recognizing the immense potential of our groundbreaking solutions.</p>
+            </div>
+        </div>
+
+        <div class="investor-card">
+            <!-- <img class="investor-logo" src="investor2_logo.png" alt="Investor 2"> -->
+            <div class="investor-details">
+                <h3>Stellar Capital Holdings</h3>
+                <p>Stellar Capital Holdings is a global investment group specializing in technology-driven enterprises.
+                    Their investment in Jarvistech underscores their commitment to fostering innovation and their
+                    confidence in our ability to deliver game-changing products to the market.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <table id="cont3">
+        <tr>
+            <th>
+                <div id="h12">
+
+                    <h2 id="h14">Shareholding and Shareholders Pattern</h2>
+                </div>
+            </th>
+
+            <th>
+
+                <img id="i2" src="pie chart.jpg" alt="">
+
+            </th>
+        </tr>
+    </table>
+    </div>
+
+
+    <section id="s4">
+        <div class="cont4">
+            <h2 id="h15">Contact Us</h2>
+            <h3 id="h16">How can we help you?</h3>
+
+        </div>
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <p>&copy; 2023 JarvisTech. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
